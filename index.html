@@ -56,6 +56,7 @@
 
     h1,
     h2,
+    h3,
     p {
       margin-top: 0;
     }
@@ -77,6 +78,10 @@
 
     main {
       padding: 52px 0 72px;
+    }
+
+    .day + .day {
+      margin-top: 52px;
     }
 
     .day-heading {
@@ -131,7 +136,6 @@
     }
 
     .edition {
-      alignment-baseline: central;
       display: inline-block;
       align-self: flex-start;
       margin-bottom: 24px;
@@ -144,7 +148,7 @@
     }
 
     .report h3 {
-      margin: 0 0 14px;
+      margin-bottom: 14px;
       font-family: "Noto Serif SC", "Source Han Serif SC", SimSun, serif;
       font-size: clamp(1.18rem, 2.5vw, 1.52rem);
       line-height: 1.42;
@@ -217,24 +221,23 @@
   </header>
 
   <main class="shell">
-    <section aria-labelledby="date-2026-11-22">
+    <section class="day" aria-labelledby="date-2026-11-22">
       <div class="day-heading">
         <h2 id="date-2026-11-22">2026 年 11 月 22 日</h2>
         <span>三报全刊</span>
       </div>
-
       <ul class="reports">
         <li class="report">
           <a href="2026-11-22/world.html">
             <span class="edition">第一版 · 世界</span>
-            <h3>中国 1.7 万亿美元 AI 抛售潮将热门交易变成亏损押注</h3>
+            <h3>中国1.7万亿美元AI抛售潮将热门交易变成亏损押注</h3>
             <p>阅读世界热点闻</p>
           </a>
         </li>
         <li class="report">
           <a href="2026-11-22/her-china.html">
             <span class="edition">第二版 · 她中国</span>
-            <h3>出狱后骗得 A2 驾照，货车追尾夺走父女两条命</h3>
+            <h3>出狱后骗得A2驾照，货车追尾夺走父女两条命</h3>
             <p>阅读中国女性报</p>
           </a>
         </li>
@@ -246,9 +249,8 @@
           </a>
         </li>
       </ul>
-
-      <p class="note">内容由 AI 辅助生成，事实以原始信源为准。</p>
     </section>
+    <p class="note">内容由 AI 辅助生成，事实以原始信源为准。</p>
   </main>
 
   <footer class="shell">望气·九闻 · 2026-11-22</footer>
