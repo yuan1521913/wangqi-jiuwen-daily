@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="望气·九闻每日三报 HTML 归档">
+  <title>望气·九闻｜每日三报</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #17191d;
+      --muted: #656a73;
+      --paper: #f7f7f4;
+      --surface: #ffffff;
+      --rule: #d9dadd;
+      --accent: #b72e26;
+      --accent-soft: #f3dedb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Noto Sans SC", "Microsoft YaHei UI", "Microsoft YaHei",
+        "PingFang SC", sans-serif;
+      line-height: 1.65;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .shell {
+      width: min(1100px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .masthead {
+      border-top: 8px solid var(--accent);
+      background: var(--ink);
+      color: #fff;
+    }
+
+    .masthead-inner {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 32px;
+      padding: 34px 0 28px;
+    }
+
+    h1,
+    h2,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      margin-bottom: 0;
+      font-family: "Noto Serif SC", "Source Han Serif SC", SimSun, serif;
+      font-size: clamp(2.25rem, 7vw, 4.75rem);
+      line-height: 1;
+      letter-spacing: 0;
+    }
+
+    .masthead p {
+      max-width: 380px;
+      margin-bottom: 5px;
+      color: #c9ccd2;
+      text-align: right;
+    }
+
+    main {
+      padding: 52px 0 72px;
+    }
+
+    .day-heading {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 22px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--ink);
+    }
+
+    h2 {
+      margin-bottom: 0;
+      font-size: 1.5rem;
+    }
+
+    .day-heading span {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .reports {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .report {
+      min-height: 260px;
+      border: 1px solid var(--rule);
+      border-radius: 6px;
+      background: var(--surface);
+      overflow: hidden;
+    }
+
+    .report a {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      padding: 24px;
+      text-decoration: none;
+    }
+
+    .report a:hover,
+    .report a:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: -3px;
+    }
+
+    .edition {
+      alignment-baseline: central;
+      display: inline-block;
+      align-self: flex-start;
+      margin-bottom: 24px;
+      padding: 3px 9px;
+      border-radius: 4px;
+      background: var(--accent-soft);
+      color: #861e18;
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
+    .report h3 {
+      margin: 0 0 14px;
+      font-family: "Noto Serif SC", "Source Han Serif SC", SimSun, serif;
+      font-size: clamp(1.18rem, 2.5vw, 1.52rem);
+      line-height: 1.42;
+    }
+
+    .report p {
+      margin: auto 0 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .note {
+      margin-top: 30px;
+      padding-top: 18px;
+      border-top: 1px solid var(--rule);
+      color: var(--muted);
+      font-size: 0.86rem;
+    }
+
+    footer {
+      padding: 0 0 36px;
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    @media (max-width: 760px) {
+      .shell {
+        width: min(100% - 28px, 1100px);
+      }
+
+      .masthead-inner {
+        display: block;
+        padding: 28px 0 24px;
+      }
+
+      .masthead p {
+        margin: 16px 0 0;
+        text-align: left;
+      }
+
+      main {
+        padding-top: 36px;
+      }
+
+      .day-heading {
+        display: block;
+      }
+
+      .day-heading span {
+        display: block;
+        margin-top: 4px;
+      }
+
+      .reports {
+        grid-template-columns: 1fr;
+      }
+
+      .report {
+        min-height: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="masthead">
+    <div class="shell masthead-inner">
+      <h1>望气·九闻</h1>
+      <p>每日世界、她中国、她世界三份 HTML 报纸归档</p>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section aria-labelledby="date-2026-11-22">
+      <div class="day-heading">
+        <h2 id="date-2026-11-22">2026 年 11 月 22 日</h2>
+        <span>三报全刊</span>
+      </div>
+
+      <ul class="reports">
+        <li class="report">
+          <a href="2026-11-22/world.html">
+            <span class="edition">第一版 · 世界</span>
+            <h3>中国 1.7 万亿美元 AI 抛售潮将热门交易变成亏损押注</h3>
+            <p>阅读世界热点闻</p>
+          </a>
+        </li>
+        <li class="report">
+          <a href="2026-11-22/her-china.html">
+            <span class="edition">第二版 · 她中国</span>
+            <h3>出狱后骗得 A2 驾照，货车追尾夺走父女两条命</h3>
+            <p>阅读中国女性报</p>
+          </a>
+        </li>
+        <li class="report">
+          <a href="2026-11-22/her-world.html">
+            <span class="edition">第三版 · 她世界</span>
+            <h3>停火之后，加沙母亲仍缺一张安全的产床</h3>
+            <p>阅读全球女性报</p>
+          </a>
+        </li>
+      </ul>
+
+      <p class="note">内容由 AI 辅助生成，事实以原始信源为准。</p>
+    </section>
+  </main>
+
+  <footer class="shell">望气·九闻 · 2026-11-22</footer>
+</body>
+</html>
